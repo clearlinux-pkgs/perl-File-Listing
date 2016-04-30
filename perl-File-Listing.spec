@@ -4,7 +4,7 @@
 #
 Name     : perl-File-Listing
 Version  : 6.04
-Release  : 9
+Release  : 10
 URL      : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Summary  : parse directory listing
