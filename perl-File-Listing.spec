@@ -4,7 +4,7 @@
 #
 Name     : perl-File-Listing
 Version  : 6.04
-Release  : 10
+Release  : 11
 URL      : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Summary  : parse directory listing
@@ -48,7 +48,7 @@ fi
 %check
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=intel.com,localhost
+export no_proxy=localhost
 make TEST_VERBOSE=1 test
 
 %install
@@ -65,7 +65,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.22.0/File/Listing.pm
+/usr/lib/perl5/site_perl/5.24.0/File/Listing.pm
 
 %files doc
 %defattr(-,root,root,-)
