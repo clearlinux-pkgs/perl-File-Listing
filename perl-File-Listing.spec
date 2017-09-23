@@ -4,7 +4,7 @@
 #
 Name     : perl-File-Listing
 Version  : 6.04
-Release  : 13
+Release  : 14
 URL      : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Summary  : parse directory listing
@@ -70,7 +70,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/site_perl/5.26.0/File/Listing.pm
+/usr/lib/perl5/site_perl/5.26.1/File/Listing.pm
 
 %files doc
 %defattr(-,root,root,-)
