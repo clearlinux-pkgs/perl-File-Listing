@@ -4,7 +4,7 @@
 #
 Name     : perl-File-Listing
 Version  : 6.04
-Release  : 23
+Release  : 24
 URL      : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Summary  : parse directory listing
@@ -29,6 +29,7 @@ next if $type ne 'f'; # plain file
 Summary: dev components for the perl-File-Listing package.
 Group: Development
 Provides: perl-File-Listing-devel = %{version}-%{release}
+Requires: perl-File-Listing = %{version}-%{release}
 
 %description dev
 dev components for the perl-File-Listing package.
