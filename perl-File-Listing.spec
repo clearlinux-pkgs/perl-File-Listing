@@ -4,12 +4,13 @@
 #
 Name     : perl-File-Listing
 Version  : 6.04
-Release  : 24
+Release  : 25
 URL      : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Source0  : http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
 Summary  : parse directory listing
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-File-Listing-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : perl(HTTP::Date)
 
@@ -35,14 +36,24 @@ Requires: perl-File-Listing = %{version}-%{release}
 dev components for the perl-File-Listing package.
 
 
+%package perl
+Summary: perl components for the perl-File-Listing package.
+Group: Default
+Requires: perl-File-Listing = %{version}-%{release}
+
+%description perl
+perl components for the perl-File-Listing package.
+
+
 %prep
 %setup -q -n File-Listing-6.04
+cd %{_builddir}/File-Listing-6.04
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
+export LANG=C.UTF-8
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make  %{?_smp_mflags}
@@ -52,7 +63,7 @@ else
 fi
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
@@ -72,8 +83,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/File/Listing.pm
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/File::Listing.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/File/Listing.pm
