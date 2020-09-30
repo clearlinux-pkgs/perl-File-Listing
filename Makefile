@@ -1,5 +1,5 @@
 PKG_NAME := perl-File-Listing
-URL = http://search.cpan.org/CPAN/authors/id/G/GA/GAAS/File-Listing-6.04.tar.gz
+URL = https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.07.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
