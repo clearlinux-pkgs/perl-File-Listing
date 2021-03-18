@@ -4,7 +4,7 @@
 #
 Name     : perl-File-Listing
 Version  : 6.14
-Release  : 30
+Release  : 31
 URL      : https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.14.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.14.tar.gz
 Summary  : 'Parse directory listing'
@@ -111,4 +111,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/File/Listing.pm
+/usr/lib/perl5/vendor_perl/5.32.1/File/Listing.pm
