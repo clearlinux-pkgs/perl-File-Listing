@@ -5,7 +5,7 @@
 #
 Name     : perl-File-Listing
 Version  : 6.16
-Release  : 45
+Release  : 46
 URL      : https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.16.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/P/PL/PLICEASE/File-Listing-6.16.tar.gz
 Summary  : 'Parse directory listing'
